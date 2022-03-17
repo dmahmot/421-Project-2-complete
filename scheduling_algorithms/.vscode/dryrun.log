@@ -1,0 +1,15 @@
+make priority_rr --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/dustin/Desktop/project2_files/scheduling_algorithms'
+ 
+gcc -Wall -g -c driver.c
+ 
+gcc -Wall -g -c list.c
+ 
+gcc -Wall -g -c CPU.c
+ 
+gcc -Wall -g   -c -o schedule_priority_rr.o schedule_priority_rr.c
+ 
+gcc -Wall -g -o priority_rr driver.o schedule_priority_rr.o list.o CPU.o
+ 
+make: Leaving directory '/home/dustin/Desktop/project2_files/scheduling_algorithms'
+ 
